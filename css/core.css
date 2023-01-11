@@ -1,0 +1,32 @@
+body {
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 26px;
+}
+
+.container {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.title {
+  position: relative;
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+  color: #292D33;
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 2px;
+  background: #5C8EE6;
+}
