@@ -1,0 +1,123 @@
+.contacts {
+  background-color: #F0F2F5;
+
+}
+
+.contacts__content {
+  display: flex;
+  gap: 120px;
+}
+
+.contacts__image {
+  margin-top: -80px;
+
+}
+
+.contacts__img {
+  height: auto;
+  max-width: 100%;
+}
+
+.contacts__info {
+  max-width: 860px;
+  padding-top: 100px;
+}
+
+.contacts__title {
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+  color: #292D33;
+  margin-bottom: 20px;
+}
+
+.contacts__text {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #828A99;
+  max-width: 640px;
+  margin-bottom: 42px;
+}
+
+.contacts__form {}
+
+.contacts__form-box {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.contacts__label {
+  width: 405px;
+  
+}
+
+.contacts__input {
+  
+  width: 100%;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #828A99;
+  padding: 20px 30px;
+  border: 1px solid #E4E4EB;
+  outline: none;
+
+}
+
+.contacts__input:focus {
+  border: 1px solid #5C8EE6;
+}
+
+
+.contacts__input::placeholder {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #828A99;
+}
+
+
+.contacts__footer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contacts__btn {
+  transition: background-color 0.8s;
+  cursor: pointer;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #5C8EE6;
+  color: #fff;
+  max-width: 235px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.contacts__btn:hover {
+  background-color: #0a1323;
+}
+
+
+.contacts__inform {
+  padding-left: 24px;
+  max-width: 403px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #828A99;
+}

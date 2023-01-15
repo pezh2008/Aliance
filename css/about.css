@@ -1,0 +1,61 @@
+.about {}
+
+.about__content {
+  display: flex;
+}
+
+.about__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about__item {
+  max-width: 720px;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.about__title {
+  margin-bottom: 20px;
+  max-width: 480px;
+}
+
+.about__text {
+  font-family: 'Noto Sans';
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #828A99;
+}
+
+.about__link {
+  transition: color 0.3s;
+  position: relative;
+  font-family: 'Noto Sans';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26%;
+  color: #828A99;
+  padding-left: 60px;
+}
+
+.about__link:hover {
+  color: #5C8EE6;
+}
+
+.about__link::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  height: 1px;
+  width: 40px;
+  background: #828A99;
+  transition: background 0.3s;
+}
+
+.about__link:hover::before {
+  
+  background: #5C8EE6;
+}
