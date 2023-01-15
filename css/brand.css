@@ -1,0 +1,59 @@
+.brand {}
+
+.brand__container {
+  padding: 150px 0;
+}
+
+.container {}
+
+.title {}
+
+.brand__list {
+  display: flex;
+
+}
+
+.brand__item {
+  padding: 50px;
+  display: flex;
+  border: 1px solid #EBEBF0;
+  align-items: center;
+  transition: border-color 0.5s;
+}
+
+.brand__img {
+  transition: fill 0.5s;
+  margin-right: 70px;
+  line-height: 0;
+  fill: #828A99;
+}
+.brand__item:hover {
+  border-color: #5C8EE6;
+}
+
+
+.brand__item:hover .brand__img {
+  fill:  #5C8EE6;
+}
+.brand__item:hover .brand__title {
+  color:   #5C8EE6;
+}
+.brand__item-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brand__title {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 45px;
+  color: #292D33;
+  margin-bottom: 10px;
+  transition: color 0.5s;
+}
+
+.brand__text {
+  max-width: 360px;
+}

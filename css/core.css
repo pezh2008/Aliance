@@ -2,6 +2,7 @@ body {
   font-size: 16px;
   font-family: "Noto Sans", sans-serif;
   line-height: 26px;
+  font-weight: 400;
 }
 
 .container {
@@ -19,6 +20,7 @@ body {
   color: #292D33;
   padding-top: 30px;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .title::before {

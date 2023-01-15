@@ -1,0 +1,53 @@
+.aerosol-products {
+  padding-top: 150px;
+}
+
+.aerosol-products__container {
+  display: flex;
+}
+
+.container {}
+
+.aerosol-products__info {
+  max-width: 50%;
+}
+
+.title {}
+
+.aerosol-products__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 24px;
+}
+
+.aerosol-products__item {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.aerosol-products__svg {}
+
+.aerosol-products__text {}
+
+.aerosol-products__brands {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 40px;
+}
+
+.aerosol-products__image {
+  padding: 45px 85px;
+  border: 1px solid #EBEBF0;
+}
+
+.aerosol-products__img {}
+
+.aerosol-products__img {
+  filter: grayscale(1);
+}
+
+.aerosol-products__img:hover {
+  filter: grayscale(0);
+}

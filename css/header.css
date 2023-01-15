@@ -20,6 +20,13 @@
   gap: 50px;
 }
 
+.menu__link {
+
+}
+
+.menu__link_white {
+  color: black;
+}
 .header__contacts {
   margin-left: auto;
   display: flex;

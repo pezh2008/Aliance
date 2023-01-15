@@ -64,12 +64,15 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  opacity: 0;
+  transition: opacity 0.9xs;
 }
 
 .work__button-decor {
   height: 1px;
   width: 40px;
   background: #5C8EE6;
+
 }
 
 .work__link {
@@ -78,4 +81,8 @@
   font-size: 16px;
   line-height: 26px;
   color: #5C8EE6;
+}
+
+.work__item:hover .work__button {
+  opacity: 1;
 }
