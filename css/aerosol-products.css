@@ -1,5 +1,6 @@
 .aerosol-products {
   padding-top: 150px;
+  margin-bottom: 150px;
 }
 
 .aerosol-products__container {
@@ -15,8 +16,9 @@
 .title {}
 
 .aerosol-products__list {
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 670px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   column-gap: 50px;
   row-gap: 24px;
 }
@@ -27,9 +29,12 @@
   align-items: center;
 }
 
-.aerosol-products__svg {}
+.aerosol-products__svg {
+  width: 30px;
+  height: 24px;
+}
 
-.aerosol-products__text {}
+
 
 .aerosol-products__brands {
   display: grid;

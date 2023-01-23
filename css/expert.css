@@ -1,0 +1,23 @@
+.expert {
+  padding-top: 100px;
+}
+
+.expert__content {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.expert__img {
+  margin-right:120px ;
+}
+
+.expert__box {
+  padding-top: 50px;
+}
+
+.expert__title {
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.expert__text {}

@@ -3,6 +3,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   line-height: 26px;
   font-weight: 400;
+  color: #292D33;
 }
 
 .container {
@@ -31,4 +32,12 @@ body {
   width: 150px;
   height: 2px;
   background: #5C8EE6;
+}
+
+a {
+  font-family: inherit;
+}
+
+button {
+  font-family: inherit;
 }

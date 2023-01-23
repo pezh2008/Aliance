@@ -1,0 +1,155 @@
+.footer__top {
+  border-bottom: 1px solid #EBEBF0;
+  padding: 50px 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo {
+  margin-right: 160px;
+}
+
+.footer__phone {
+  font-family: 'Noto Sans';
+  font-weight: 600;
+  font-size: 32px;
+  border-bottom: 2px solid black;
+  color: #292D33;
+  margin-right: 88px;
+}
+
+.footer__map {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-right: 34px;
+}
+
+.footer__map-icon {
+  transition: fill 0.5s;
+  width: 16px;
+  height: 16px;
+  fill: #5C8EE6;
+}
+
+.footer__map-icon:hover {
+  fill: red;
+}
+
+.footer__adress {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #292D33;
+  margin-right: 34px;
+}
+
+.footer__mail {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-right: 57px;
+}
+
+.footer__mail-link {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #292D33;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__socials-vk {
+  height: 16px;
+  width: 16px;
+}
+
+.footer__socials-instagram {
+  height: 16px;
+  width: 16px;
+}
+
+.footer-menu {
+  padding: 50px 0;
+}
+
+.footer-menu__list {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.footer-menu__item {
+  margin-bottom: 30px;
+}
+
+.footer-menu__link {
+  font-family: 'Noto Sans';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #292D33;
+}
+
+.sub-menu {
+  padding-left: 15px;
+  margin-top: 30px;
+}
+
+.sub-menu__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* row-gap: 15px; */
+}
+
+.sub-menu__item {
+  margin-bottom: 15px;
+}
+
+.sub-menu__link {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #828A99;
+}
+
+.footer__bottom {
+  border-top: 1px solid #EBEBF0;
+  padding: 20px 0;
+}
+
+.footer__copy {
+  margin-right: 20px;
+  font-size: 12px;
+  line-height: 19px;
+  color: #828A99;
+}
+
+.footer__privat {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  text-decoration: underline;
+  color: #828A99;
+}
+
+.footer__made {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  font-size: 12px;
+  line-height: 19px;
+}

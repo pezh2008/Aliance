@@ -1,8 +1,8 @@
-.brand {}
-
-.brand__container {
-  padding: 150px 0;
+.brand {
+  padding-top: 150px;
 }
+
+
 
 .container {}
 
@@ -14,6 +14,8 @@
 }
 
 .brand__item {
+  max-width: 50%;
+  width: 100%;
   padding: 50px;
   display: flex;
   border: 1px solid #EBEBF0;

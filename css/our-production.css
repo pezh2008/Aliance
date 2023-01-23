@@ -1,0 +1,41 @@
+.our-production {
+  padding-top: 150px;
+}
+
+.our-production__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-production__content {
+  max-width: 720px;
+}
+
+.our-production__title {
+  margin-bottom: 20px;
+}
+
+.our-production__text {
+  line-height: 26px;
+  color: #828A99;
+  margin-bottom: 30px;
+}
+
+.productions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 24px;
+}
+
+.priductions__item {
+  display: flex;
+  gap: 24px;
+}
+
+.priductions__icon {}
+
+.productions__text {}
+
+.our-production__image {}
+
+.our-production__img {}

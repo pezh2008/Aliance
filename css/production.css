@@ -10,19 +10,27 @@
 }
 
 .product__item {
+  transition: border-color 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 50px;
   max-width: 480px;
-  border: 1px solid #EBEBF0;
+  border: 2px solid #EBEBF0;
 }
 
+.product__item:hover {
+  border-color:  #5C8EE6;
+}
+.product__item:hover .product__title {
+  color:  #5C8EE6;
+}
 .product__info {
   padding-left: 50px;
 }
 
 .product__title {
+  transition: color 0.3s;
   font-weight: 400;
   font-size: 28px;
   line-height: 45px;
