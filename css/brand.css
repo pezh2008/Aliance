@@ -2,11 +2,14 @@
   padding-top: 150px;
 }
 
-
-
+.brand_padding {
+  padding-bottom: 224px;
+}
 .container {}
 
-.title {}
+.title {
+  
+}
 
 .brand__list {
   display: flex;

@@ -1,0 +1,40 @@
+.error {
+  padding: 244px 0 150px;
+
+}
+
+.error__content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  align-items: center;
+}
+
+.error__number {
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  font-size: 300px;
+  line-height: 300px;
+  color: #5C8EE6;
+}
+
+.error__title {
+  font-size: 28px;
+  line-height: 45px;
+  color: #292D33;
+  margin-bottom: 20px;
+}
+
+.error__text {
+  text-align: center;
+  color: #292D33;
+  margin-bottom: 30px;
+}
+
+.error__link {
+  text-align: center;
+  padding: 25px 60px;
+  color: #fff;
+  background-color: #5C8EE6;
+}

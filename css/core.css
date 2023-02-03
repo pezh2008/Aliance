@@ -4,6 +4,8 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #292D33;
+  overflow-x: hidden;
+  background-color: #585454;
 }
 
 .container {

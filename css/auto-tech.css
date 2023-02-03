@@ -1,0 +1,21 @@
+.auto-tech {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.container {
+}
+.auto-tech__content {
+  display: flex;
+  gap: 120px;
+  margin-bottom: 100px;
+  align-items: center;
+}
+.auto-tech__img {
+}
+.auto-tech__description {
+}
+.title {
+}
+.auto-tech__text {
+  color: #828A99;
+}

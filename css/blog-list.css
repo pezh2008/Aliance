@@ -1,0 +1,36 @@
+.blog-list {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.blog-list__container {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+}
+.blocg-list__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.blog-list__item {
+  max-width: 705px;
+  width: 100%;
+  position: relative;
+}
+.blog-list__img {
+}
+.blog-list__box {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  color: #fff;
+}
+.blog-list__title {
+  font-size: 28px;
+  line-height: 45px;
+  margin-bottom: 10px;
+}
+.blog-list__text {
+}

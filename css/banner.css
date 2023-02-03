@@ -72,12 +72,18 @@
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
+.advantages_border {
+  border-color:#EBEBF0;
+}
+
 .advantages__item {
   transition: 0.5s;
   padding: 30px 50px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
 }
-
+.advantages_border .advantages__item {
+  border-color:#EBEBF0;
+}
 .advantages__item:nth-child(5) {
   border-right: none;
 }

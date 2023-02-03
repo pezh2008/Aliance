@@ -20,12 +20,14 @@
 .research__slider {
   height: 400px;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
+  overflow: visible;
 }
 
 .research__slide {
-  max-width: 730px;
+  max-width: 705px;
   width: 100%;
+
 }
 
 .research__slide img {
@@ -39,23 +41,28 @@
   align-items: center;
   text-align: right;
 }
+
 .research__btn-wrapper {
   display: flex;
   justify-content: flex-end;
 }
+
 .research__btn-left {
   transition: background 0.3s;
   padding: 22px 18px 22px 31.5px;
-  background:  #5C8EE6;
+  background: #5C8EE6;
 }
+
 .research__btn-left:hover {
-  background:  #dc19cf;
+  background: #dc19cf;
 }
+
 .research__btn-right {
-  transition: background  0.3s;
-  background:  #5C8EE6;
+  transition: background 0.3s;
+  background: #5C8EE6;
   padding: 22px 31.5px 22px 18px;
 }
+
 .research__btn-right:hover {
-background-color: #77b530;
+  background-color: #77b530;
 }

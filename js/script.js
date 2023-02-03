@@ -29,9 +29,42 @@ const researchRight = document.querySelector(".research__btn-right");
 new Swiper(researchSlider, {
   loop: true,
   spaceBetween: 30,
-  slidesPerView: 3,
+  slidesPerView: 2,
+  loopedSlides: 4,
   navigation: {
     nextEl: researchRight,
     prevEl: researchLeft,
   },
 });
+
+
+
+
+const headerBtn = document.querySelector(".header__btn");
+const popup = document.querySelector(".popup");
+const popupClose = document.querySelector(".popup__close");
+const popupBtn = document.querySelector(".popup__btn");
+const modal = document.querySelector(".modal");
+const modalClose = document.querySelector(".modal__close");
+
+
+headerBtn.addEventListener("click", ()=>{
+  popup.style.display = "flex";
+
+  // popup.classList.add("popup-test");
+})
+
+popupClose.addEventListener("click", ()=>{
+  popup.style.display = "none";
+})
+
+popupBtn.addEventListener("click", (event)=>{
+  event.preventDefault();
+  popup.style.display = "none";
+  modal.style.display = "flex";
+})
+
+modalClose.addEventListener("click", ()=>{
+  modal.style.display = "none";
+})
+

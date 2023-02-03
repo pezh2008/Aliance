@@ -1,0 +1,19 @@
+.him-product {
+  padding-top: 100px;
+}
+.container {
+}
+.him-product__content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.him-product__img {
+  margin-right: 120px;
+}
+.him-product__title {
+}
+
+.him-product__text {
+  max-width: 720px;
+}
