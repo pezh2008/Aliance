@@ -16,15 +16,79 @@
   background-color: transparent;
 }
 
+/* .burger2 {
+  display: none;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: none;
+  background: url("../img/header/burger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.burger2.test {
+  background: url("../img/header/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
 
 .burger {
   display: none;
+  align-items: center;
   width: 50px;
   height: 50px;
-  background-color:rebeccapurple;
-
+  /* background-color: rebeccapurple; */
+  background: none;
 }
 
+.burger__line {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 2px;
+  background: #fff;
+  /* transition: background 0.8s; */
+}
+
+.burger__line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-10px);
+  background-color: #fff;
+  width: 50px;
+  height: 2px;
+  transition: all 0.5s;
+}
+
+.burger__line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(10px);
+  background-color: #fff;
+  width: 50px;
+  height: 2px;
+  transition: all 0.5s;
+}
+
+.burger.test .burger__line {
+  background-color: transparent;
+}
+
+.burger.test .burger__line::before {
+  transform: rotate(45deg);
+  background: #292D33;
+}
+
+.burger.test .burger__line::after {
+  transform: rotate(-45deg);
+  background: #292D33;
+}
 
 .header__logo {
   margin-right: 100px;
@@ -68,6 +132,44 @@
 
 .header_transparent .menu__link {
   color: #FFFFFF;
+}
+
+.header-submenu__list {
+  transition: opacity 0.5s;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  opacity: 0;
+  visibility: hidden;
+  padding: 10px;
+  width: 225px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu__item:hover .header-submenu__list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-submenu__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* .header-submenu__item:last-child {
+  margin-bottom: 0;
+} */
+
+.header-submenu__link {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #fff;
 }
 
 .header__contacts {
@@ -120,20 +222,110 @@
 
 
 
-@media(max-width: 1750px) {
-  .header {
-    justify-content: space-between;
-  }
+
+
+
+
+@media(max-width: 1360px) {
+
   .header__menu {
     display: none;
   }
-  .burger {
-    display: block;
+
+  .header__contacts svg,
+  .header__phone {
+    display: none;
   }
+  
+}
+
+@media(max-width: 640px) {
+  .header {
+    padding-left: 30px;
+    min-height: 48px;
+    justify-content: space-between;
+  }
+
   .header__logo {
-    order: 2;
+    margin-right: 0;
+    padding: 10px 0;
+    border-right: none;
   }
-  /* .header__contacts{
-    order: 3;
+
+  .header__menu {
+    transition: transform 0.5s;
+    transform: translateX(-100%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    min-height: 100vh;
+    z-index: -1;
+  }
+
+  .header__menu.test2 {
+    transform: translateX(0);
+  }
+
+  .menu__list {
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 20px;
+    gap: 30px;
+  }
+
+  .header_transparent .menu__link {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    color: #292D33;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  /* .burger2 {
+    display: block;
   } */
+
+  .header__contacts {
+    margin-left: 0;
+  }
+
+  .header__contacts svg,
+  .header__phone {
+    display: none;
+  }
+
+  .header__btn {
+    display: inline-block;
+    background-image: url("../img/header/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    min-height: 72px;
+    font-size: 0;
+    margin-left: 0;
+  }
+
+  .header-submenu__list {
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    background: none;
+    border-radius: none;
+    box-shadow: none;
+    backdrop-filter: blur(0px);
+    border: none;
+
+  }
+
+  .header-submenu__link {
+    color: #828A99;
+  }
 }
