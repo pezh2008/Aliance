@@ -60,3 +60,19 @@
   
   background: #5C8EE6;
 }
+
+
+
+@media(max-width:1475px) {
+  .about {
+    padding: 10px;
+  }
+  .about__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .about__text {
+    font-size: 14px;
+  }
+}

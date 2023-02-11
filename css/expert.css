@@ -20,4 +20,15 @@
   margin-bottom: 20px;
 }
 
-.expert__text {}
+
+@media(max-width: 1200px) {
+  .expert__content {
+    max-width: 375px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .expert__img {
+    margin-right: 0;
+  }
+
+}

@@ -5,9 +5,11 @@ body {
   font-weight: 400;
   color: #292D33;
   overflow-x: hidden;
-  background-color: #585454;
+  /* background-color: #585454; */
 }
-
+body.no-scroll {
+  overflow-y: hidden;
+}
 .container {
   max-width: 1460px;
   margin: 0 auto;
@@ -34,6 +36,15 @@ body {
   width: 150px;
   height: 2px;
   background: #5C8EE6;
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 36px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    line-height: 43px;
+  }
 }
 
 a {

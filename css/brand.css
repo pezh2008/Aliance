@@ -13,11 +13,11 @@
 
 .brand__list {
   display: flex;
-
+  flex-wrap: wrap;
 }
 
 .brand__item {
-  max-width: 50%;
+  max-width: 720px;
   width: 100%;
   padding: 50px;
   display: flex;
@@ -27,6 +27,8 @@
 }
 
 .brand__img {
+  width: 140px;
+  height: 120px;
   transition: fill 0.5s;
   margin-right: 70px;
   line-height: 0;
@@ -61,4 +63,48 @@
 
 .brand__text {
   max-width: 360px;
+}
+
+
+@media(max-width: 540px) {
+ .brand {
+  padding-top: 100px;
+ }
+
+ .brand__item{
+  flex-direction: column;
+  position: relative;
+  padding: 30px;
+  align-items: flex-start;
+ }
+ .brand__img {
+  margin: 0;
+  margin-bottom: 36px;
+  margin-left: 15px;
+  width: 85px;
+  height: 67px;
+ }
+
+ .brand__title{
+  position: absolute;
+  top: 13px;
+  right: 43px;
+  max-width: 147px;
+  font-size: 20px;
+  line-height: 26px;
+  
+
+ }
+ .brand__title-mobile {
+  display: none;
+ }
+ .brand__item-box {
+
+ }
+ .brand__text {
+  max-width: 100%;
+  font-size: 14px;
+  color: #828A99;
+  line-height: 22px;
+ }
 }

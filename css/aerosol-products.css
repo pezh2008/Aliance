@@ -56,3 +56,35 @@
 .aerosol-products__img:hover {
   filter: grayscale(0);
 }
+
+@media(max-width: 1450px) {
+  .aerosol-products {
+    padding-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .aerosol-products__container {
+    flex-direction: column;
+  }
+
+  .aerosol-products__info {
+    max-width: 100%;
+  }
+
+  .aerosol-products__list {
+    grid-template-columns: 1fr;
+  }
+
+  .aerosol-products__brands {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aerosol-products__brands .aerosol-products__image:last-child {
+    display: none;
+  }
+  .aerosol-products__image {
+    padding: 30px 38px;
+    text-align: center;
+  }
+  
+
+}

@@ -6,21 +6,26 @@ const slider = document.querySelector(".blog__slider");
 //наш общий слайдера
 new Swiper(slider, {
   slidesPerView: 2, // по сколько слайдев отображать на странице (либо цифра или авто
-  loop: false, // повтор слайдев (true/folce)
+  loop: true, // повтор слайдев (true/folce)
   spaceBetween: 30, //растояние между слайдами
   allowTouchMove: false,
-  speed: 6000,
   navigation: {
     nextEl: right,
     prevEl: left,
   },
   breakpoints: {
-    600: {
-      slidesPerView: 2,
-      loop: false,
+    320: {
+      slidesPerView: 1,
     },
+    
+    800: {
+      slidesPerView: 2,
+    
+    },
+
   },
 });
+
 //слайдер страницы about
 const researchSlider = document.querySelector(".research__slider");
 const researchLeft = document.querySelector(".research__btn-left");
@@ -73,8 +78,60 @@ const menu = document.querySelector(".header__menu");
 burger.addEventListener("click", () => {
   burger.classList.toggle("test");
   menu.classList.toggle("test2");
+  document.body.classList.toggle("no-scroll");
 });
 
 
 //banner сдайдер
 
+const advantages = document.querySelector(".advantages");
+const bannerBtnPrev = document.querySelector(".banner__btn-left")
+const bannerBtnNext = document.querySelector(".banner__btn-right")
+
+new Swiper(advantages, {
+  loop: false,
+  slidesPerView: 5,
+  allowTouchMove: false,
+  navigation: {
+    nextEl: bannerBtnNext,
+    prevEl: bannerBtnPrev,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: "auto",
+      allowTouchMove: true,
+      loop: true,
+    },
+    1300: {
+      slidesPerView: 5,
+      allowTouchMove: false,
+     
+    },
+  },
+});
+
+
+const workSlider = document.querySelector(".work__list");
+const workBtnPrev = document.querySelector(".work__btn-prev")
+const workBtnNext = document.querySelector(".work__btn-next")
+new Swiper(workSlider, {
+  loop: true,
+  slidesPerView: 4,
+  allowTouchMove: false,
+  navigation: {
+    nextEl: workBtnNext,
+    prevEl: workBtnPrev,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: "auto",
+      allowTouchMove: true,
+      
+    },
+    1300: {
+      slidesPerView: 4,
+      allowTouchMove: false,
+     
+    },
+  },
+});
